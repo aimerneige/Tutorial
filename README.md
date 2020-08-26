@@ -15,7 +15,7 @@ A tutorial for beginner of computer science.
 
 - [计算机选购指南](计算机选购指南.md)
 - [计算机使用技巧](计算机使用技巧.md)
-- [常用软件介绍](常用软件介绍.md)
+- [常用软件推荐](常用软件推荐.md)
 - [Chrome插件推荐](Chrome插件推荐.md)
 - [Tampermonkey](Tampermonkey.md)
 - [C语言自学指南](C语言自学指南.md)
