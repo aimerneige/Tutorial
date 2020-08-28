@@ -24,6 +24,6 @@ A tutorial for beginner of computer science.
 
 ## Others 其他
 
-项目使用 VisualStudioCode 进行编辑。
+项目使用 `Visual Studio Code` 进行编辑。
 
 项目推荐的字体： `Sarasa Mono TC`
