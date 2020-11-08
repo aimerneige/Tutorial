@@ -27,3 +27,7 @@ A tutorial for beginner of computer science.
 项目使用 `Visual Studio Code` 进行编辑。
 
 项目推荐的字体： `Sarasa Mono TC`
+
+## Contributor 贡献者
+
+- [nidbCN](https://github.com/nidbCN) for [C语言自学指南](C语言自学指南.md)
