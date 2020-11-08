@@ -1,21 +1,24 @@
-# C语言自学指南
+# C 语言自学指南
 
 ## 开发环境配置
 
-### 使用Visual Studio 2019
-1. 在官网下载Visual Studio 2019
-2. 双击运行安装程序，在安装完Visual Studio Installer后选择安装"C/C++桌面开发"
-3. 使用时新建解决方案选择C++控制台应用即可
-### 使用Visual Studio Code
-1. 在官网下载Visual Studio Code
-2. 安装Visual Studio Code
-3. 安装插件Code Runner、CppTools等
-4. 在官网下载LLVM(Pre-Built Binaries:Windows(64-bit))
-5. 安装LLVM，并将其bin文件夹添加到环境变量中
-6. 在SourceForge上下载MinGW-w64(Toolchains targetting Win64/Personal Builds/mingw-builds/[版本]/threads-posix/seh/)
-7. 解压缩MinGW-w64，并将其bin文件夹添加到环境变量中
-8. 打开PowerShell或者cmd，输入 `gcc -v` 检查环境是否正确安装，如果输出
-   ``` 
+### 使用 Visual Studio 2019
+
+1. 在官网下载 Visual Studio 2019
+2. 双击运行安装程序，在安装完 Visual Studio Installer 后选择安装"C/C++桌面开发"
+3. 使用时新建解决方案选择 C++控制台应用即可
+
+### 使用 Visual Studio Code
+
+1. 在官网下载 Visual Studio Code
+2. 安装 Visual Studio Code
+3. 安装插件 Code Runner、CppTools 等
+4. 在官网下载 LLVM(Pre-Built Binaries:Windows(64-bit))
+5. 安装 LLVM，并将其 bin 文件夹添加到环境变量中
+6. 在 SourceForge 上下载 MinGW-w64(Toolchains targetting Win64/Personal Builds/mingw-builds/[版本]/threads-posix/seh/)
+7. 解压缩 MinGW-w64，并将其 bin 文件夹添加到环境变量中
+8. 打开 PowerShell 或者 cmd，输入 `gcc -v` 检查环境是否正确安装，如果输出
+   ```
    gcc : 无法将“gcc”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。
     所在位置 行:1 字符: 1
     + gcc -v
@@ -27,10 +30,11 @@
    ```
    'gca' 不是内部或外部命令，也不是可运行的程序或批处理文件。
    ```
-   则说明环境没有配置成功，需要检查一下LLVM的安装和环境变量的设置
+   则说明环境没有配置成功，需要检查一下 LLVM 的安装和环境变量的设置
 9. 新建一个文件夹作为代码存储的文件夹，这里命名为`C-Project`
-10. 进入文件夹，右键，点击"通过code打开"，或者打开VSCode后点击"文件"->"打开文件夹"。方便起见可以在打开后将其保存为工作区
-11. 新建一个文件，命名为`testCode.c`，写入如下代码
+10. 进入文件夹，右键，点击"通过 code 打开"，或者打开 VSCode 后点击"文件"->"打开文件夹"。方便起见可以在打开后将其保存为工作区
+11. 新建一个文件，命名为 `testCode.c`，写入如下代码
+
     ```
     #include <stdio.h>
 
@@ -40,14 +44,16 @@
         return 0;
     }
     ```
-12. 点击右上角三角运行，如果和 上面测试环境 步骤一样报错，但是测试环境时没有报错，那么重启VSCode即可。应该会在下面"输出栏"有如下输出
+
+12. 点击右上角三角运行，如果和 上面测试环境 步骤一样报错，但是测试环境时没有报错，那么重启 VSCode 即可。应该会在下面"输出栏"有如下输出
     ```
     [Running] cd "d:\test\" && gcc test.c -o test && "d:\test\"test
     Hello World
     [Done] exited with code=0 in 0.669 seconds
     ```
-13. 但是编辑器内include部分有波浪线，没有成功的找到头文件，需要添加配置文件，新建一个文件夹`.vscode`，并在里面新建文件`launch.json`、`settings.json`、`tasks.json`
-14. 在`launch.json`里面写入如下内容
+13. 但是编辑器内 `include` 部分有波浪线，没有成功的找到头文件，需要添加配置文件，新建一个文件夹`.vscode`，并在里面新建文件 `launch.json`、`settings.json`、`tasks.json`
+14. 在 `launch.json` 里面写入如下内容
+
     ```
     {
         // Use IntelliSense to learn about possible attributes.
@@ -81,7 +87,9 @@
         ]
     }
     ```
-    在`settings.json`里面写入
+
+    在 `settings.json` 里面写入
+
     ```
     {
         // 在终端中运行编译命令，否则我们无法与程序通过标准输入交互
@@ -117,7 +125,9 @@
         "editor.suggestSelection": "recentlyUsedByPrefix"
     }
     ```
-    在`task.json`里面写入
+
+    在 `task.json` 里面写入
+
     ```
         {
         // See https://go.microsoft.com/fwlink/?LinkId=733558
@@ -161,15 +171,18 @@
         ]
     }
     ```
+
 15. 新建文件夹`build`
-16. 将文件夹.vscode和build从**工作区**删除，**注意不要删除文件**，防止误触
-### 使用CLion
+16. 将文件夹.vscode 和 build 从**工作区**删除，**注意不要删除文件**，防止误触
+
+### 使用 CLion
 
 ## 书籍推荐
 
 1. 《C Primer Plus》(中国工信出版集团、人民邮电出版社)
-**珍爱生命，原理谭浩强**
+
+> **珍爱生命，原理谭浩强**
 
 ## 视频教程推荐
 
-1. 中国大学MOOC-浙江大学-翁恺教授-C语言程序设计
+1. 中国大学 MOOC-浙江大学-翁恺教授-C 语言程序设计 <https://www.icourse163.org/u/wengkai?userId=318013>
