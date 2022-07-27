@@ -1,7 +1,7 @@
 # Tutorial
 
-> 开发中！！部分内容不完整！！
-> 欢迎pr
+> 本项目已终止维护
+> 欢迎查看： <https://github.com/mzdluo123/SurfingTutorial>
 
 > This project will only support Chinese.
 
